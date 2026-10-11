@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QHayVzla — Instrucciones para Testers / Tester Instructions</title>
+<style>
+  :root { --bg:#121212; --card:#1e1e1e; --txt:#e8e8e8; --muted:#9e9e9e; --accent:#64b5f6; --green:#4caf50; --orange:#ff8f00; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt); font-family:-apple-system,Roboto,"Segoe UI",Arial,sans-serif; line-height:1.6; }
+  header { background:linear-gradient(135deg,#0d47a1,#1565c0); padding:32px 20px; text-align:center; }
+  header h1 { margin:0; font-size:1.6em; }
+  header p { margin:8px 0 0; color:#cfd8dc; }
+  .lang { display:flex; gap:12px; justify-content:center; margin:16px 0 0; }
+  .lang a { background:#ffffff22; color:#fff; padding:8px 18px; border-radius:20px; text-decoration:none; font-weight:bold; }
+  main { max-width:760px; margin:0 auto; padding:20px 16px 60px; }
+  h2 { color:var(--accent); border-bottom:2px solid #2c2c2c; padding-bottom:8px; margin-top:40px; }
+  h3 { color:var(--orange); margin-top:28px; }
+  .card { background:var(--card); border-radius:14px; padding:16px 18px; margin:14px 0; }
+  .warn { background:#2a2118; border-left:4px solid var(--orange); border-radius:10px; padding:12px 16px; margin:14px 0; }
+  .ok { background:#152a15; border-left:4px solid var(--green); border-radius:10px; padding:12px 16px; margin:14px 0; }
+  .rule { background:#0d2137; border-left:4px solid var(--accent); border-radius:10px; padding:14px 18px; margin:14px 0; font-size:1.05em; }
+  table { width:100%; border-collapse:collapse; margin:12px 0; background:var(--card); border-radius:10px; overflow:hidden; }
+  th, td { padding:10px 12px; text-align:left; border-bottom:1px solid #2c2c2c; }
+  th { background:#263238; color:var(--accent); }
+  code { background:#000; padding:2px 8px; border-radius:6px; color:#80cbc4; }
+  a { color:var(--accent); }
+  ol li, ul li { margin:8px 0; }
+  .footer { text-align:center; color:var(--muted); margin-top:48px; font-size:.9em; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📱 QHayVzla</h1>
+  <p>Instrucciones para Testers — Prueba Cerrada Google Play<br>Tester Instructions — Google Play Closed Test</p>
+  <div class="lang">
+    <a href="#es">🇻🇪 Español</a>
+    <a href="#en">🌎 English</a>
+  </div>
+</header>
+<main>
+
+<h2 id="es">🇻🇪 ESPAÑOL</h2>
+
+<h3>¿Qué es esto?</h3>
+<p>QHayVzla es una app venezolana de compraventa local (tipo marketplace). Para poder publicarla en Google Play, Google exige que un grupo de personas reales la pruebe durante <strong>14 días seguidos</strong>. Gracias por ayudar con esto.</p>
+
+<div class="ok">
+<strong>Lo único importante (resumen de 3 líneas):</strong>
+<ol style="margin:8px 0 0">
+<li><strong>Instala la app y NO la desinstales durante 14 días.</strong></li>
+<li><strong>Ábrela un rato cada día</strong> (2-5 minutos bastan).</li>
+<li><strong>Regístrate con tu número de prueba y tu correo real</strong> (abajo calculas tu número en 10 segundos).</li>
+</ol>
+</div>
+
+<h3>Paso 1 — Aceptar la invitación</h3>
+<div class="card">
+<ol>
+<li>Abre el enlace de invitación (opt-in): <a href="https://play.google.com/apps/testing/com.qhay.android">play.google.com/apps/testing/com.qhay.android</a></li>
+<li>Ábrelo con la <strong>misma cuenta de Gmail</strong> que registraste en Tester Community.</li>
+<li>Presiona <strong>"Aceptar" / "Become a tester"</strong>.</li>
+</ol>
+</div>
+<div class="warn">⚠️ Si abres el enlace con otra cuenta de Google, no te dejará entrar. Verifica en la Play Store qué correo estás usando (ícono de perfil arriba a la derecha).</div>
+
+<h3>Paso 2 — Instalar la app</h3>
+<div class="card">
+<ol>
+<li>Después de aceptar, el mismo enlace te lleva a la ficha de QHayVzla en Play Store.</li>
+<li>Presiona <strong>Instalar</strong> y espera a que termine.</li>
+<li><strong>No desinstales la app en los próximos 14 días.</strong> Si la desinstalas, tu conteo deja de sumar y puede retrasar la publicación para todos.</li>
+</ol>
+</div>
+
+<h3>Paso 3 — Registrarte dentro de la app</h3>
+<p>La app es solo para Venezuela, así que el registro pide un número venezolano. <strong>No uses tu número real</strong>: calcula tu número de prueba con esta regla (así cada tester tiene uno único, sin que nadie te lo tenga que asignar):</p>
+
+<div class="rule">📞 <strong>Tu número de prueba = <code>0412</code> + los últimos 7 dígitos de tu número de teléfono real.</strong><br>
+Ejemplo: si tu número real termina en <code>5551234</code> → te registras con <code>04125551234</code>.</div>
+
+<p>Tu <strong>estado y municipio</strong> también los eliges por regla, según la <strong>primera letra de tu correo Gmail</strong>:</p>
+
+<table>
+<tr><th>Inicial de tu correo</th><th>Estado</th><th>Municipio</th></tr>
+<tr><td>A – E</td><td>Distrito Capital</td><td>Libertador</td></tr>
+<tr><td>F – J</td><td>Carabobo</td><td>Valencia</td></tr>
+<tr><td>K – O</td><td>Zulia</td><td>Maracaibo</td></tr>
+<tr><td>P – S</td><td>Aragua</td><td>Girardot</td></tr>
+<tr><td>T – Z</td><td>Lara</td><td>Iribarren</td></tr>
+</table>
+<p style="color:var(--muted)"><em>Ejemplo: si tu correo es maria@gmail.com → M → te registras en <strong>Zulia / Maracaibo</strong>. Es importante que uses los que te tocan: la prueba necesita testers repartidos en zonas específicas.</em></p>
+
+<div class="card">
+<strong>Pasos:</strong>
+<ol>
+<li>Abre QHayVzla.</li>
+<li>En el campo de teléfono, escribe tu número de prueba (formato 04XX-XXXXXXX).</li>
+<li>Completa tus datos: nombre (real o el que prefieras) y ubicación (el estado y municipio de la tabla).</li>
+<li>En el campo de correo, escribe <strong>tu correo real</strong> (el que sí puedes abrir).</li>
+<li>La app te enviará una <strong>clave de 6 dígitos a tu correo</strong>: revisa la bandeja de entrada; si no aparece en 1-2 minutos, revisa <strong>SPAM / No deseados</strong>.</li>
+<li>Escribe la clave en la app y entra.</li>
+</ol>
+</div>
+<div class="warn">⚠️ La clave llega <strong>por correo, no por SMS</strong>. El número de teléfono es solo tu usuario; nadie te llamará ni te escribirá a ese número.</div>
+
+<h3>Regla de contenido: TODOS publicamos ZAPATOS 👟</h3>
+<p>La app es nueva, así que al principio no hay productos publicados. Para que las búsquedas siempre muestren resultados reales, <strong>todos los testers publicamos únicamente ZAPATOS</strong> durante la prueba.</p>
+<p>Lo importante: la palabra <strong>"zapatos"</strong> debe aparecer en el <strong>TÍTULO</strong> del producto (la búsqueda funciona por el título). La descripción, el precio y la foto son libres. Ejemplos de títulos:</p>
+<div class="card">Zapatos deportivos · Zapatos para damas · Zapatos económicos · Zapatos blancos · Zapatos de vestir · Zapatos tallas grandes · Zapatos para niños · Zapatos de cuero</div>
+<p>Para buscar, escribe simplemente <strong>"zapatos"</strong> en el buscador. Si en tu zona no aparece nada, amplía la búsqueda (estado / nacional).</p>
+<div class="warn">⚠️ Si buscas otra cosa (ej. "nevera" o "teléfono"), es normal que no haya resultados: la app te ofrecerá seguir la búsqueda en MercadoLibre o Instagram. Eso <strong>NO es un error</strong> — es el comportamiento esperado para productos que aún no existen en la app. Durante la prueba, enfócate en zapatos.</div>
+
+<h3>Paso 4 — Usar la app cada día (14 días)</h3>
+<div class="card">
+<ul>
+<li>👟 <strong>Publica 1-3 productos el primer día — SOLO ZAPATOS.</strong> Botón <strong>Vender</strong>: título, precio, descripción; la foto es opcional (si falla la cámara, usa una imagen de la galería).</li>
+<li>🔍 <strong>Busca "zapatos"</strong> (prueba también "deportivos", "damas") y abre resultados de otros testers.</li>
+<li>👀 Abre productos y mira sus fotos.</li>
+<li>👤 Revisa tu <strong>Perfil</strong> (plan, estadísticas).</li>
+<li>💬 Toca el <strong>botón de WhatsApp</strong> de algún producto de otro tester (ver nota abajo).</li>
+<li>⭐ <strong>Responde la encuesta</strong> si te llega una notificación de "califica tu experiencia" (normalmente al día siguiente de tocar un contacto, cerca de las 2 PM).</li>
+</ul>
+</div>
+<div class="warn">📵 <strong>Sobre el contacto:</strong> los números de esta prueba son ficticios, así que WhatsApp <strong>no abrirá una conversación real</strong> (dirá que el número no está en WhatsApp o el mensaje nunca llegará). Eso es <strong>normal y esperado, no es un error</strong> — no hace falta reportarlo. Con solo tocar el botón, la app ya registró el contacto internamente.</div>
+<div class="warn">⭐ <strong>Sobre las encuestas:</strong> respóndela con la calificación que quieras (1 a 5 estrellas). No hay respuesta correcta — solo necesitamos que la completes para que las estadísticas se muevan. Solo toca el botón de contacto en productos de <strong>otros testers de la prueba</strong>, nunca en productos de números reales.</div>
+<div class="ok">💰 <strong>No necesitas comprar nada, ni pagar nada, ni usar dinero real. Todo es de prueba.</strong></div>
+
+<h3>Preguntas frecuentes</h3>
+<table>
+<tr><th>Pregunta</th><th>Respuesta</th></tr>
+<tr><td>¿La app me va a cobrar algo?</td><td><strong>No.</strong> Hay un botón "Ver Planes", pero <strong>NO pagues nada</strong>. Los precios visibles son de prueba.</td></tr>
+<tr><td>¿La clave no me llega?</td><td>Revisa <strong>SPAM</strong>. Si tras 5 minutos no llega, repórtalo.</td></tr>
+<tr><td>¿Puedo desinstalar y reinstalar?</td><td>Mejor no. Si pasa, reinstala <strong>el mismo día</strong> y entra con tu número de prueba (la clave llega de nuevo a tu correo; no pierdes nada).</td></tr>
+<tr><td>¿Tengo que estar en Venezuela?</td><td><strong>No.</strong> Funciona desde cualquier país.</td></tr>
+<tr><td>¿Cuánto dura?</td><td><strong>14 días continuos</strong> desde que te agregan. Te avisaremos cuando termine.</td></tr>
+<tr><td>¿Por qué al buscar algo me salen MercadoLibre o Instagram?</td><td>Porque la app es nueva y nadie ha publicado eso todavía. Es el comportamiento correcto. Publica y busca solo zapatos.</td></tr>
+<tr><td>¿Qué pasa si se me olvida un día?</td><td>No es el fin del mundo, pero intenta no fallar — Google cuenta <strong>días continuos</strong>.</td></tr>
+</table>
+
+<h3>Contacto</h3>
+<p>Cualquier problema (no te deja entrar, no llega la clave, la app se cierra): repórtalo por la plataforma de <strong>Tester Community</strong> o al correo del administrador: <strong>[CORREO_DEL_ADMIN]</strong>, con captura de pantalla si es posible.</p>
+
+<h2 id="en">🌎 ENGLISH</h2>
+
+<h3>What is this?</h3>
+<p>QHayVzla is a Venezuelan local buy &amp; sell marketplace app. To publish it on Google Play, Google requires a group of real testers to use it for <strong>14 consecutive days</strong>. Thank you for helping with this.</p>
+
+<div class="ok">
+<strong>The only 3 things that matter:</strong>
+<ol style="margin:8px 0 0">
+<li><strong>Install the app and DO NOT uninstall it for 14 days.</strong></li>
+<li><strong>Open it for a few minutes every day</strong> (2-5 minutes is enough).</li>
+<li><strong>Register with your test phone number and your real email</strong> (you'll calculate your number below — takes 10 seconds).</li>
+</ol>
+</div>
+
+<h3>Step 1 — Accept the invitation</h3>
+<div class="card">
+<ol>
+<li>Open the opt-in link: <a href="https://play.google.com/apps/testing/com.qhay.android">play.google.com/apps/testing/com.qhay.android</a></li>
+<li>Open it using the <strong>same Gmail account</strong> you registered with on Tester Community.</li>
+<li>Tap <strong>"Become a tester" / "Accept"</strong>.</li>
+</ol>
+</div>
+<div class="warn">⚠️ If you open the link with a different Google account, it won't work. Check which account is active in the Play Store (profile icon, top right).</div>
+
+<h3>Step 2 — Install the app</h3>
+<div class="card">
+<ol>
+<li>After accepting, the same link takes you to the QHayVzla listing on the Play Store.</li>
+<li>Tap <strong>Install</strong> and wait for it to finish.</li>
+<li><strong>Do not uninstall the app for the next 14 days.</strong> Uninstalling stops your day count and can delay the release for everyone.</li>
+</ol>
+</div>
+
+<h3>Step 3 — Register inside the app</h3>
+<p>The app is Venezuela-only, so registration asks for a Venezuelan phone number. <strong>Do NOT use your real number</strong>: calculate your test number with this rule (every tester gets a unique one — no assignment needed):</p>
+
+<div class="rule">📞 <strong>Your test number = <code>0412</code> + the last 7 digits of your real phone number.</strong><br>
+Example: if your real number ends in <code>5551234</code> → register with <code>04125551234</code>.</div>
+
+<p>Your <strong>state and municipality</strong> are also chosen by rule, based on the <strong>first letter of your Gmail address</strong>:</p>
+
+<table>
+<tr><th>Email initial</th><th>State</th><th>Municipality</th></tr>
+<tr><td>A – E</td><td>Distrito Capital</td><td>Libertador</td></tr>
+<tr><td>F – J</td><td>Carabobo</td><td>Valencia</td></tr>
+<tr><td>K – O</td><td>Zulia</td><td>Maracaibo</td></tr>
+<tr><td>P – S</td><td>Aragua</td><td>Girardot</td></tr>
+<tr><td>T – Z</td><td>Lara</td><td>Iribarren</td></tr>
+</table>
+<p style="color:var(--muted)"><em>Example: if your email is maria@gmail.com → M → register in <strong>Zulia / Maracaibo</strong>. It's important that you use the ones from the table: the test needs testers spread across specific areas.</em></p>
+
+<div class="card">
+<strong>Steps:</strong>
+<ol>
+<li>Open QHayVzla.</li>
+<li>In the phone field, enter your test number (format 04XX-XXXXXXX).</li>
+<li>Fill in your details: name (real or any name you like) and location (state and municipality from the table).</li>
+<li>In the email field, enter <strong>your real email</strong> (one you can actually open).</li>
+<li>The app will send a <strong>6-digit code to your email</strong>: check your inbox; if it doesn't show up within 1-2 minutes, check <strong>SPAM / Junk</strong>.</li>
+<li>Enter the code in the app and you're in.</li>
+</ol>
+</div>
+<div class="warn">⚠️ The code arrives <strong>by email, not SMS</strong>. The phone number is just your username; nobody will call or text that number.</div>
+
+<h3>Content rule: EVERYONE posts SHOES 👟</h3>
+<p>The app is brand new, so at first there are no products listed. To make sure searches always show real results, <strong>all testers post only SHOES</strong> during the test.</p>
+<p>The important thing: the word <strong>"zapatos"</strong> must appear in the product <strong>TITLE</strong> (search works off the title). The description, price, and photo are up to you. Example titles:</p>
+<div class="card">Zapatos deportivos · Zapatos para damas · Zapatos económicos · Zapatos blancos · Zapatos de vestir · Zapatos tallas grandes · Zapatos para niños · Zapatos de cuero</div>
+<p>To search, just type <strong>"zapatos"</strong> in the search box. If nothing shows up in your area, widen the search (state / nationwide).</p>
+<div class="warn">⚠️ If you search for something else (e.g. "fridge" or "phone"), it's normal to get no results: the app will offer to continue on MercadoLibre or Instagram. That's <strong>NOT a bug</strong> — it's the expected behavior for products that don't exist in the app yet. During the test, stick to shoes.</div>
+
+<h3>Step 4 — Use the app daily (14 days)</h3>
+<div class="card">
+<ul>
+<li>👟 <strong>Post 1-3 test products on your first day — SHOES ONLY.</strong> <strong>Vender</strong> button: title, price, description; photo is optional (if the camera fails, pick an image from the gallery).</li>
+<li>🔍 <strong>Search for "zapatos"</strong> (also try "deportivos", "damas") and open other testers' results.</li>
+<li>👀 Open product listings and look at the photos.</li>
+<li>👤 Check your <strong>Profile</strong> (plan, statistics).</li>
+<li>💬 Tap the <strong>WhatsApp contact button</strong> on a product from another tester (see note below).</li>
+<li>⭐ <strong>Answer the survey</strong> if you get a "rate your experience" notification (usually the day after tapping a contact, around 2 PM).</li>
+</ul>
+</div>
+<div class="warn">📵 <strong>About the contact button:</strong> the phone numbers in this test are fictitious, so WhatsApp <strong>won't open a real conversation</strong> (it will say the number isn't on WhatsApp or the message will never arrive). That's <strong>normal and expected — not a bug</strong>, no need to report it. Just tapping the button already registers the contact inside the app.</div>
+<div class="warn">⭐ <strong>About surveys:</strong> answer with any rating you like (1 to 5 stars, whatever). There's no right or wrong answer — we just need you to complete it so the app's statistics keep moving. Only tap the contact button on products from <strong>other testers in this test</strong>, never on products from real numbers.</div>
+<div class="ok">💰 <strong>You don't need to buy anything, pay anything, or use real money. Everything is a test.</strong></div>
+
+<h3>FAQ</h3>
+<table>
+<tr><th>Question</th><th>Answer</th></tr>
+<tr><td>Will the app charge me anything?</td><td><strong>No.</strong> There is a "View Plans" button, but <strong>DO NOT pay anything</strong>. Visible prices are test prices.</td></tr>
+<tr><td>The code never arrived</td><td>Check <strong>SPAM</strong>. If it's still missing after 5 minutes, report it.</td></tr>
+<tr><td>Can I uninstall and reinstall?</td><td>Better not. If it happens, reinstall <strong>the same day</strong> and log back in with your test number (a new code is sent to your email; you lose nothing).</td></tr>
+<tr><td>Do I have to be in Venezuela?</td><td><strong>No.</strong> It works from any country.</td></tr>
+<tr><td>How long does this last?</td><td><strong>14 consecutive days</strong> from when you're added. We'll let you know when it's over.</td></tr>
+<tr><td>Why does my search show MercadoLibre or Instagram?</td><td>Because the app is new and nobody has posted that yet. That's the correct behavior. Post and search for shoes only.</td></tr>
+<tr><td>What if I forget one day?</td><td>Not the end of the world, but try not to skip — Google counts <strong>consecutive days</strong>.</td></tr>
+</table>
+
+<h3>Contact</h3>
+<p>Any problem (can't log in, code never arrives, app crashes): report it through the <strong>Tester Community</strong> platform or email the administrator: <strong>[ADMIN_EMAIL]</strong>, with a screenshot if possible.</p>
+
+<p class="footer">QHayVzla — Gracias por ser parte de esta prueba · Thank you for being part of this test 🇻🇪</p>
+</main>
+</body>
+</html>
